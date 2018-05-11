@@ -17,16 +17,16 @@ const User = mongoose.model('user', new mongoose.Schema({
   }
 }))
 //新增数据
-// User.create({
-//   name: '发财瞄',
-//   age: 1
-// }, function(err, doc) {
-//   if (!err) {
-//     console.log(doc);
-//   } else {
-//     console.log(err);
-//   }
-// })
+User.create({
+  name: '发财瞄2',
+  age: 2
+}, function(err, doc) {
+  if (!err) {
+    console.log(doc);
+  } else {
+    console.log(err);
+  }
+})
 User.update({
   _id: "5ad8071696f050a144d4aa61"
 }, {
